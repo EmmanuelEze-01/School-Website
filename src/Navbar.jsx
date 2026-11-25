@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./assets/Logo.png";
-import "./styles/Navbar.css";
+import "./styles/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 

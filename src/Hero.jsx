@@ -1,5 +1,5 @@
 import React from "react";
-import './styles/Hero.css'
+import './styles/hero.css'
 import HeroImage from './assets/School-building.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
