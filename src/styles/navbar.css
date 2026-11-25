@@ -52,7 +52,7 @@ nav {
   align-items: center;
 }
 
-.menu{
+.menu {
   display: none;
 }
 .nav .logo {
@@ -95,7 +95,7 @@ nav {
   background-color: #e2a400;
 }
 
-@media (max-width: 1024px) and (min-width: 768px ){
+@media (max-width: 1024px) and (min-width: 768px) {
   .nav button {
     display: none;
   }
@@ -106,7 +106,10 @@ nav {
     display: none;
   }
 
-  nav{
+  .nav button {
+    display: none;
+  }
+  nav {
     height: 100px;
     padding-top: 20px;
   }

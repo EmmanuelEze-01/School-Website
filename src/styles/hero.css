@@ -118,4 +118,24 @@ img {
   .buttons {
     flex-direction: column;
   }
+
+  #hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .left h2,
+  .left p {
+    max-width: fit-content;
+  }
+
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
 }
