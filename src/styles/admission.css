@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#admissions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 30px;
+  background: #faf7f0;
+}
+
+.steps-cards-cnt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 7px;
+  color: #1f2937;
+}
+
+.step-card span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.step-card h3 {
+  font-size: 13px;
+  font-weight: 500;
+  max-width: 20ch;
+  color: #1f2937;
+}
+
+.step-card p {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f4b400;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-sec {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  height: 100px;
+  justify-content: space-between;
+  background-color: #207420;
+  padding: 10px 30px;
+  border-radius: 15px;
+  align-items: center;
+  color: #fff;
+}
+
+.action-sec div:first-child {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.action-sec span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.action-sec div:first-child .ic {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.action-sec p {
+  font-size: 13px;
+}
+
+.action-sec button {
+  display: flex;
+  width: 160px;
+  height: 50px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  gap: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.action-sec button:hover {
+  background-color: #207420;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 576px) {
+  .steps-cards-cnt {
+    grid-template-columns: 1fr;
+  }
+
+  .action-sec {
+    flex-direction: column;
+    height: fit-content;
+    gap: 15px;
+  }
+
+  .action-sec div:first-child .ic {
+    display: none;
+  }
+
+  .action-sec button {
+    width: 100%;
+  }
+}

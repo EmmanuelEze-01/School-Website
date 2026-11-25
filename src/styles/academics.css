@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#academics {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  gap: 10px;
+  padding: 10px 30px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #faf7f0;
+}
+
+.tag {
+  color: green;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#academics h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.a-card-container{
+    display: grid;
+    margin-top: 10px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.a-card{
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.a-card .top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-card:nth-child(1) .top {
+  background-color: #F9E5B0;
+}
+
+.a-card:nth-child(2) .top {
+  background-color: #D9E5F5;
+}
+
+.a-card:nth-child(3) .top {
+  background-color: #E1F0E9;
+}
+
+.a-card:nth-child(4) .top {
+  background-color: #F3DAD4;
+}
+
+
+.a-icon{
+    color: #0B2D6B;
+    font-size: 3rem;
+}
+
+.a-card div:last-child{
+    height: 60%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
+.a-card span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.a-card p{
+    font-size: 14px;
+}
+
+.a-card h3{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.a-card button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+}

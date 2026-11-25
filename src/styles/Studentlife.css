@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#studentLife {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  gap: 5px;
+  background-color: #faf7f0;
+}
+
+.s-card-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 120px);
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.s-image {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #faf7f0;
+}
+
+.s-one {
+  grid-column: 4/5;
+  background-color: #f9e5b0;
+  grid-row: 1/2;
+}
+
+.s-two {
+  grid-column: 5/6;
+  grid-row: 1/2;
+  background-color: #d9e5f5;
+}
+
+.s-three {
+  grid-column: 6/7;
+  grid-row: 1/2;
+  background-color: #e1f0e9;
+}
+
+.s-four {
+  grid-column: 4/7;
+  grid-row: 2/3;
+  background: #f3dad4;
+}
+.s-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  color: #1f2937;
+  border-radius: 10px;
+}
+
+.s-card span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.s-card .s-icon {
+  font-size: 3rem;
+  color: #1f2937;
+}
+
+
+@media (max-width: 576px) {
+  .s-card-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 100px);
+  }
+
+  .s-image{
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .s-one{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .s-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .s-three{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .s-four{
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
